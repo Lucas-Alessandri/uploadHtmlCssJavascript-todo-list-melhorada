@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List - Melhorada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="todo-list">
+        <h1>To Do List - Melhorada</h1>
+        <div class="box-input-btn">
+            <input type="text" placeholder="Digite sua Tarefa">
+            <button class="add-tarefa" onclick="addTarefa()">Adicionar</button>
+        </div>
+        <ul>
+
+        </ul>
+    </main>
+    <section class="enviar-whatsapp">
+        <h2>Enviar para seu <span class="text">WhatsApp</span></h2>
+        <div class="instrucoes">
+            <h3>Instruções:</h3>
+            <ol>
+                <li>Digite suas tarefas <strong>separadas</strong> por <strong>vírgulas</strong>, também não use outros
+                    caracteres além da vírgula,<br>Ex: Arrumar a cama, tomar café, programar</li>
+                <li>Não se preocupe com a formatação, pois enviaremos à você já formatada.</li>
+                <li>No espaço do telefone coloque o "55" (sem o +) e também o DDD. <br> Lembre-se: Coloque seu telefone
+                    real.</li>
+            </ol>
+        </div>
+        <form class="formulario" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input type="text" id="nome" class="campo-formulario" placeholder="Digite seu nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-formulario" id="tarefas"
+                    placeholder="Digite suas tarefas conforme as instruções"></textarea>
+            </div>
+            <div class="grupo-form">
+                <input type="tel" class="campo-formulario" id="numTelefone" autocomplete="tel"
+                    placeholder="Digite seu número de telefone conforme as instruções">
+            </div>
+            <button type="submit" class="btn-whatsapp">Enviar para seu WhatsApp</button>
+        </form>
+    </section>
+    <footer class="creditos">
+        <h4>Por: Lucas Alessandri - Dev Front End</h4>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html
